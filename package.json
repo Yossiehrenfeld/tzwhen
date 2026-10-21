@@ -1,6 +1,6 @@
 {
   "name": "tzwhen",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Convert a time across time zones in the terminal, with aliases like nyc/london/tlv and day-change markers. Zero dependencies (Intl only).",
   "license": "MIT",
   "author": "Yosef Ehrenfeld",
@@ -21,7 +21,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
-    "prepublishOnly": "npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -46,5 +46,9 @@
   },
   "bin": {
     "tzwhen": "./dist/cli.js"
+  },
+  "homepage": "https://github.com/Yossiehrenfeld/tzwhen#readme",
+  "bugs": {
+    "url": "https://github.com/Yossiehrenfeld/tzwhen/issues"
   }
 }

@@ -1,5 +1,8 @@
 # tzwhen
 
+[![CI](https://github.com/Yossiehrenfeld/tzwhen/actions/workflows/ci.yml/badge.svg)](https://github.com/Yossiehrenfeld/tzwhen/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 "3pm New York is what time in Tel Aviv, London and Tokyo?" — answered in your terminal, with
 day changes marked. Uses only the built-in `Intl` API: zero dependencies, no time zone database
 to ship or update.
@@ -15,10 +18,20 @@ America/Los_Angeles  Tue 2026-11-10  12:00  PST (UTC-08:00)
 
 ## Install
 
+Not on npm yet — install straight from GitHub (npm builds it on install):
+
 ```sh
-npm install -g tzwhen     # CLI
-npm install tzwhen        # library
+npm install github:Yossiehrenfeld/tzwhen
 ```
+
+Or clone and build it yourself:
+
+```sh
+git clone https://github.com/Yossiehrenfeld/tzwhen && cd tzwhen
+npm install && npm run build && npm link   # puts `tzwhen` on your PATH
+```
+
+Requires Node 18+.
 
 ## CLI
 
